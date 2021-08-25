@@ -32,11 +32,13 @@ set classpath, java_home and path environment variables
 
 (1) set classpath=.;C:\axis-1_4\lib\axis.jar;C:\axis-1_4\lib\commons-discovery-0.2.jar;C:\axis-1_4\lib\log4j-1.2.8.jar;C:\axis-1_4\lib\wsdl4j-1.5.1.jar;C:\axis-1_4\lib\axis-ant.jar;C:\axis-1_4\lib\commons-logging-1.0.4.jar;C:\axis-1_4\lib\axis-schema.jar;C:\axis-1_4\lib\jaxrpc.jar;C:\axis-1_4\lib\saaj.jar;C:\axis-1_4\lib\activation.jar;C:\axis-1_4\lib\tools.jar;C:\axis-1_4\lib\servlet.jar;C:\axis-1_4\lib\mail.jar;C:\axis-1_4\samples;C:\Tomcat 5.0\common\lib\servlet-api.jar
 
-(2) set path=C:\Program Files\Java\jdk1.8.0_291;%path%  
-Note:- (do not set path in this way C:\Program Files\Java\jdk1.8.0_291\bin) because happyaxis.jsp page (http://127.0.0.1:8080/axis/happyaxis.jsp); 
+(2) set java_home=C:\Program Files\Java\jdk1.8.0_291;
+Note:- (do not set JAVA_HOME path in this way C:\Program Files\Java\jdk1.8.0_291\bin) because happyaxis.jsp page (http://127.0.0.1:8080/axis/happyaxis.jsp); 
           under "Examining System Properties" you'll see that property java.home is set to the JRE path, not the JDK path in your machine.
 
-(2) set java_home=C:\Program Files\Java\jdk1.8.0_291
+(3) set path=C:\Program Files\Java\jdk1.8.0_291\bin;%path% (this path for java file compilation)
+   
+
 
 step 5
 ======
