@@ -164,7 +164,7 @@ import zeep
 
 wsdl = 'http://127.0.0.1:8080/axis/HelloWorldService.jws?wsdl'
 client = zeep.Client(wsdl=wsdl)
-print(client.service.HelloWorld('Zeep', 'is cool'))
+print(client.service.HelloWorld('Zeep is cool'))
 
 
 I ran it and received the correct message from the Axis service. 
